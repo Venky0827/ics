@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | InfraCode Solutions</title>
+  <meta name="description" content="Contact InfraCode Solutions for Red Hat and Nutanix automation, DevOps enablement, migration and infrastructure services.">
+  <meta name="theme-color" content="#0050A0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img class="brand-logo" src="ics-1.jpg" alt="Infra Code Solutions">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-head reveal bg-pro">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">Tell us about your goals. We respond within one business day.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section reveal">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="info-icon">✉︎</div>
+            <div class="info-text">
+              <div class="info-label">Email</div>
+              <a id="contact-email" href="mailto:info@example.com">info@example.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">☎︎</div>
+            <div class="info-text">
+              <div class="info-label">Phone</div>
+              <a id="contact-phone" href="tel:+0000000000">+00 0000 00000</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">⌂</div>
+            <div class="info-text">
+              <div class="info-label">Address</div>
+              <div id="contact-address">Your business address</div>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required>
+              <div class="field-error" data-for="name"></div>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required>
+              <div class="field-error" data-for="email"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company name">
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+              <div class="field-error" data-for="subject"></div>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Describe your goals and current environment" required></textarea>
+            <div class="field-error" data-for="message"></div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="button primary">Send message</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">InfraCode Solutions Pvt. Ltd.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+      </div>
+      <div class="footer-copy">© <span id="year"></span> InfraCode Solutions. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
