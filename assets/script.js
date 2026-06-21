@@ -117,3 +117,4 @@ if (form) {
     });
   });
 }
+if (typeof lucide !== 'undefined') lucide.createIcons();

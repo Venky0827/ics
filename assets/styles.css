@@ -60,6 +60,7 @@ body.fade-out { opacity: 0; }
 .stagger.in .card:nth-child(6) { transition-delay: .24s; }
 .card { background: #ffffff; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 18px; display: grid; gap: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); }
 .card-icon { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: rgba(var(--brand-sky-rgb),0.18); color: #0b3a6f; font-weight: 700; }
+.card-icon svg { width: 18px; height: 18px; }
 .accent-red { background: rgba(210,32,47,0.25); }
 .accent-green { background: rgba(47,191,113,0.25); }
 .accent-blue { background: rgba(46,117,182,0.25); }
