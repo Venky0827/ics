@@ -117,4 +117,6 @@ if (form) {
     });
   });
 }
-if (typeof lucide !== 'undefined') lucide.createIcons();
+window.addEventListener('load', () => {
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+});
