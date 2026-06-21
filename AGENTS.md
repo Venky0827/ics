@@ -9,8 +9,9 @@ Static HTML/CSS/JS marketing site for InfraCode Solutions Pvt. Ltd. — an IT in
 ```
 .
 ├── index.html          # Home page
+├── about.html          # About page (company, mission, partnerships)
 ├── services.html       # Services page
-├── contact.html        # Contact page with form
+├── contact.html        # Contact page with Formspree form
 ├── assets/
 │   ├── styles.css      # All styles (single file)
 │   └── script.js       # All JS (single file)
@@ -22,14 +23,19 @@ Static HTML/CSS/JS marketing site for InfraCode Solutions Pvt. Ltd. — an IT in
 
 Open any `.html` file in a browser. No dev server needed — files are served as static content from any HTTP server (Python `http.server`, nginx, etc.).
 
+## Contact form
+
+The contact form (`#contact-form`) uses **Formspree** for submission. The endpoint is `https://formspree.io/f/xbdvrzln`. Form submissions are emailed to the address configured in the Formspree dashboard.
+
+## Deployment
+
+Hosted on **GitHub Pages** with custom domain `infracodesolutions.com`. Push to `main` branch to deploy.
+
 ## Before deployment
 
-**contact.html** uses placeholder values that must be replaced with real data:
-- `info@example.com` → actual contact email (line 44)
-- `+00 0000 00000` → actual phone (line 51)
-- `Your business address` → actual address (line 58)
-
-The contact form (`#contact-form` in `script.js`) is **client-side only** — it validates input but never sends data to a backend. It simulates success with a 600ms `setTimeout`. Wire it to a real form handler or API before going live.
+Ensure Formspree is configured:
+- Email confirmed in Formspree dashboard
+- Notification email set to receive submissions
 
 ## Conventions
 
@@ -37,3 +43,4 @@ The contact form (`#contact-form` in `script.js`) is **client-side only** — it
 - JS handles: nav toggle, scroll-based header shadow, IntersectionObserver reveal animations, letter-scroll hero heading, parallax background, page fade-out transitions, active nav highlighting, year in footer
 - Google Fonts: Montserrat (400, 500, 600, 700, 800)
 - Color scheme uses CSS custom properties (`--brand-deep: #0050A0`, `--brand-sky: #5DA9E9`)
+- Nutanix and Red Hat partner branding on homepage and about page
