@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | InfraCode Solutions</title>
-  <meta name="description" content="Contact InfraCode Solutions for Red Hat and Nutanix automation, DevOps enablement, migration and infrastructure services.">
+  <meta name="description" content="Contact InfraCode Solutions for Red Hat and Nutanix automation, AI inferencing, DevOps enablement, migration and infrastructure services.">
   <meta name="theme-color" content="#0050A0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <header class="site-header">
@@ -30,8 +31,8 @@
   <main>
     <section class="section page-head reveal bg-pro">
       <div class="container">
-        <h1 class="scroll-letters">Contact</h1>
-        <p class="lead">Tell us about your goals. We respond within one business day.</p>
+        <h1 class="scroll-letters">Get in Touch</h1>
+        <p class="lead">Tell us about your infrastructure goals. We respond within one business day with a tailored assessment.</p>
       </div>
     </section>
 
@@ -39,25 +40,34 @@
       <div class="container contact-grid reveal">
         <div class="contact-info">
           <div class="info-item">
-            <div class="info-icon">✉︎</div>
+            <div class="info-icon"><i data-lucide="mail"></i></div>
             <div class="info-text">
               <div class="info-label">Email</div>
               <a id="contact-email" href="mailto:admin@infracodesolutions.com">admin@infracodesolutions.com</a>
             </div>
           </div>
           <div class="info-item">
-            <div class="info-icon">☎︎</div>
+            <div class="info-icon"><i data-lucide="phone"></i></div>
             <div class="info-text">
               <div class="info-label">Phone</div>
               <a id="contact-phone" href="tel:+919705939688">+91-97059-39688</a>
             </div>
           </div>
           <div class="info-item">
-            <div class="info-icon">⌂</div>
+            <div class="info-icon"><i data-lucide="map-pin"></i></div>
             <div class="info-text">
-              <div class="info-label">Address</div>
+              <div class="info-label">Office</div>
               <div id="contact-address">SY;11 WeWork Krishe Emerald, Kondapur Main Road, Laxmi Cyber City, Whitefields, Serilingampally Mandal, Ranga Reddy District, Hyderabad, Telangana 500081</div>
             </div>
+          </div>
+
+          <div class="contact-assurance">
+            <h3>What happens next?</h3>
+            <ul>
+              <li><i data-lucide="check-circle" style="width:16px;height:16px;color:var(--success);flex-shrink:0"></i> We review your inquiry within 24 hours</li>
+              <li><i data-lucide="check-circle" style="width:16px;height:16px;flex-shrink:0;color:var(--success)"></i> A certified engineer responds with a tailored plan</li>
+              <li><i data-lucide="check-circle" style="width:16px;height:16px;flex-shrink:0;color:var(--success)"></i> Free initial assessment — no commitment required</li>
+            </ul>
           </div>
         </div>
 
@@ -81,17 +91,17 @@
             </div>
             <div class="form-field">
               <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+              <input id="subject" name="subject" type="text" placeholder="Nutanix deployment, Red Hat automation, AI inferencing..." required>
               <div class="field-error" data-for="subject"></div>
             </div>
           </div>
           <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Describe your goals and current environment" required></textarea>
+            <label for="message">Tell us about your environment</label>
+            <textarea id="message" name="message" rows="6" placeholder="Current platforms, team size, goals, timeline..." required></textarea>
             <div class="field-error" data-for="message"></div>
           </div>
           <div class="form-actions">
-            <button type="submit" class="button primary">Send message</button>
+            <button type="submit" class="button primary">Send Assessment Request</button>
             <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
           </div>
         </form>
@@ -105,6 +115,7 @@
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
       </div>
       <div class="footer-copy">© <span id="year"></span> InfraCode Solutions. All rights reserved.</div>
     </div>
